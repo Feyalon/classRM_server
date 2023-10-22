@@ -18,3 +18,17 @@
         api/leads - Клиенты
     </li>
 </ul>
+<h2>
+    Как запустить сервак:
+</h2>
+<ul>
+    <li>
+        Запуск виртуалки с консоли:
+            cd venv 
+            Scripts/Activate
+    </li>
+    <li>
+        Запуск сервера тоже с консоли:
+            python manage.py runserver
+    </li>
+</ul>
