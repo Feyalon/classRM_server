@@ -1,5 +1,6 @@
 from django.db import models
 from users.models import User
+from companys.models import Company
 # Create your models here.
 
 class Leads(models.Model):
@@ -15,7 +16,7 @@ class Leads(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    
+    company_name = models.ForeignKey(to=Company, on_delete=models.CASCADE, null=False)
 
     
     def __str__(self):

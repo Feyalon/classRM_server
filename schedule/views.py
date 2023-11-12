@@ -10,3 +10,5 @@ class schedule_list(APIView):
     def get(self, request):
         lst = Schedule.objects.all().values()
         return Response({'users': list(lst)})
+    
+
